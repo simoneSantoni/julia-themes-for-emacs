@@ -83,6 +83,13 @@ Leuven is loaded with `NO-ENABLE` (`(load-theme 'leuven t t)`), so only its sett
 
 The themes never install or force a font. Leuven's Sans Serif variations, such as mail headers and scaled titles, still work, and so does whatever `fixed-pitch` font you use. JuliaMono suits these themes well.
 
+Org tables, blocks, `~code~` and `=verbatim=` inherit `fixed-pitch`. Out of the box that face uses the family `Monospace`, which fontconfig resolves to a system mono font such as DejaVu Sans Mono, not to your `default` font. If you set only `default`, tables then render in a different font from the text around them. Set both faces:
+
+```elisp
+(set-face-attribute 'default nil :family "JuliaMono" :height 130)
+(set-face-attribute 'fixed-pitch nil :family "JuliaMono") ; no :height, so it stays relative to default
+```
+
 ## Requirements
 
 - GNU Emacs with the bundled `leuven` theme, which ships in `etc/themes/`. Tested on Emacs 30.2.
