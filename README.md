@@ -48,7 +48,7 @@ All four accents show up in an ordinary Org document, even one without four leve
 - **Headings** cycle green, red, blue, purple through levels 1–8. Level 1 is drawn 1.3× larger. Levels 1–3 sit on a tinted band that runs to the window edge, and levels 1–2 also get an overline. The same faces apply to `outline-N`.
 - **Document title**: purple, bold, 1.8× height. The `#+title:` keyword gets a purple tint.
 - **Drawers, properties, block delimiters and `~code~`** are red. Blocks sit on the surface color, in `fixed-pitch`.
-- **TODO** is blue on a blue tint, and **DONE** is red on a red tint. Tables and agenda dates are blue. Tags, dates, `=verbatim=` and the agenda structure are purple. Today's agenda date is green.
+- **TODO** is red on a red tint, and **DONE** is green on a green tint. Tables and agenda dates are blue. Tags, dates, `=verbatim=` and the agenda structure are purple. Today's agenda date is green.
 - Custom TODO keyword faces are colored if your configuration defines them: `os-org-todo-next` green, `os-org-todo-wait` blue, `os-org-todo-hold` purple, `os-org-todo-cancelled` muted. Without those definitions they do nothing.
 
 ### Mode line

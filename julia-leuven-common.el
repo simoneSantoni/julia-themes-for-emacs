@@ -12,9 +12,10 @@
 ;; Accent roles incorporate the requested blue/red, then red/green swaps:
 ;; keywords/functions use green, strings use red, constants/errors use blue.
 ;; All four accents also appear in ordinary Org documents without requiring
-;; four nested headings: purple titles/tags, green top headings, red drawers
-;; and completed tasks, blue links/tables/open tasks.  Explicit Org faces keep
-;; this balance independent of Leuven's inherited decorative colour mapping.
+;; four nested headings: purple titles/tags, green top headings and completed
+;; tasks, red drawers and open tasks, blue links/tables.  Explicit Org faces
+;; keep this balance independent of Leuven's inherited decorative colour
+;; mapping.
 ;; Light text colours darken green for legibility; dark colours are lifted.
 ;; The optional green light variant uses Julia green #389826 mixed with 93% white (#f1f8f0,
 ;; rounded to 8-bit channels); its neutral surfaces use a slightly stronger
@@ -155,8 +156,8 @@ DARK selects the dark palette; GREEN-PAPER tints the light background green."
             :extend t)
       (face 'org-code :inherit 'fixed-pitch :foreground red)
       (face 'org-verbatim :inherit 'fixed-pitch :foreground purple)
-      (face 'org-todo :foreground blue :background (tint blue) :weight 'bold)
-      (face 'org-done :foreground red :background (tint red) :weight 'bold)
+      (face 'org-todo :foreground red :background (tint red) :weight 'bold)
+      (face 'org-done :foreground green :background (tint green) :weight 'bold)
       (cl-loop for name in '(os-org-todo-next os-org-todo-wait os-org-todo-hold
                             os-org-todo-cancelled)
                for colour in (list green blue purple muted)
